@@ -1,0 +1,9 @@
+vosk==0.3.45
+pyttsx3==2.90
+sounddevice==0.4.6
+psutil==5.9.8
+requests==2.31.0
+beautifulsoup4==4.12.2
+pycaw==20231217
+comtypes==1.2.0
+llama-cpp-python==0.2.76

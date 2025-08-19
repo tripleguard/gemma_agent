@@ -1,0 +1,43 @@
+{
+  "model": {
+    "path": "gemma-3-1B-it-QAT-Q4_0.gguf",
+    "ctx_size": 8192,
+    "temperature": 0.15,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.1,
+    "max_tokens": 256,
+    "seed": 42
+  },
+  "activation_word": "Гемма",
+  "silence_timeout": 2,
+  "tts": {
+    "voice_index": 3,
+    "rate": 180,
+    "volume": 0.8
+  },
+  "commands": {
+    "стим": {
+      "open": "C:/Program Files (x86)/Steam/steam.exe -applaunch 570",
+      "close": "steam"
+    },
+    "браузер": {
+      "open": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+      "close": "msedge"
+    },
+    "телеграм": {
+      "open": "C:/Users/${USER}/AppData/Roaming/Telegram Desktop/Telegram.exe",
+      "close": "Telegram.exe"
+    },
+    "яндекс музыку": {
+      "open": "C:/Users/${USER}/AppData/Local/Programs/YandexMusic/Яндекс Музыка.exe",
+      "close": "Яндекс Музыка.exe"
+    }
+  },
+  "web_search": {
+    "max_sources": 2,
+    "search_timeout_sec": 6,
+    "page_timeout_sec": 6,
+    "per_page_limit": 2500
+  }
+}
