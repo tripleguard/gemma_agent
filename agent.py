@@ -207,10 +207,21 @@ def execute_predefined_command(text: str) -> Optional[str]:
                 return f"Закрываю {key}." if success else f"{key.capitalize()} не запущен."
     return None
 
+# Команда подбросить монетку
+def execute_coin_flip_command(text: str) -> Optional[str]:
+    triggers = ['подбрось монет', 'орёл или решк', 'монетк' ]
+    if any(trigger in text.lower() for trigger in triggers):
+        import random
+        result = random.choice(['орёл', 'решка'])
+        speak(f'Выпал {result}')
+        return result
+    return None
+
 # Маршрутизация команд
 def route_command(text: str) -> str:
 
     handlers = [
+        execute_coin_flip_command,
         execute_predefined_command,
         execute_power_command,
         execute_volume_command,
